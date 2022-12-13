@@ -256,4 +256,21 @@ services:
 
 ### SQL 
 
-Coming soon!
+
+How to see 100 rows and all columns of table yellow_taxi_trips
+
+```sql
+SELECT *
+FROM yellow_taxi_trips
+LIMIT 100
+```
+
+How to inner join 3 tables
+```sql
+SELECT *
+FROM yellow_taxi_trips t,
+location_pickup lpu,
+location_dropof ldo
+WHERE t. = lpu.
+```
+
