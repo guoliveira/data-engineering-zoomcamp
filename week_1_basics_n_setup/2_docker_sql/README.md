@@ -265,12 +265,14 @@ FROM yellow_taxi_trips
 LIMIT 100
 ```
 
-How to inner join 3 tables
+How to inner join 3 tables to get location and drop off information
+
 ```sql
 SELECT *
 FROM yellow_taxi_trips t,
-location_pickup lpu,
-location_dropof ldo
-WHERE t. = lpu.
+zones zpu,
+zones zdo
+WHERE t."PULocationID" = zpu."LocationID" and t."DOLocationID" = zdo."LocationID"
+LIMIT 100
 ```
 
